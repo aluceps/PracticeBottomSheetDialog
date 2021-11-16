@@ -13,6 +13,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
         binding.button.setOnClickListener {
+            ModalBottomSheet.newInstance()
+                .show(supportFragmentManager, ModalBottomSheet.TAG)
         }
     }
 }
