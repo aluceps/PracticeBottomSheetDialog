@@ -17,6 +17,9 @@ class ModalBottomSheet : BottomSheetDialogFragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentModalBottomSheetBinding.inflate(layoutInflater)
+        binding.text2.setOnClickListener { }
+        binding.text3.setOnClickListener { }
+        binding.text4.setOnClickListener { }
         return binding.root
     }
 
